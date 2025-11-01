@@ -39,4 +39,13 @@ fun FormulirPendaftaran(modifier: Modifier) {
     var status by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
 
+    // State hasil submit
+    var submittedNama by remember { mutableStateOf("") }
+    var submittedJK by remember { mutableStateOf("") }
+    var submittedStatus by remember { mutableStateOf("") }
+    var submittedAlamat by remember { mutableStateOf("") }
+
+    val genderList = listOf("Laki-laki", "Perempuan")
+    val statusList = listOf("Janda", "Lajang", "Duda")
+
 
