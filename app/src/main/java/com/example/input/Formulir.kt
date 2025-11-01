@@ -72,3 +72,10 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 fontWeight = FontWeight.Bold
             )
         }
+
+        // Isi form
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        )
