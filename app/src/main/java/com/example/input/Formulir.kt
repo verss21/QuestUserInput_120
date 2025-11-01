@@ -92,3 +92,6 @@ fun FormulirPendaftaran(modifier: Modifier) {
 
             Spacer(Modifier.height(12.dp))
 
+            // Jenis Kelamin
+            Text(text = "JENIS KELAMIN", fontWeight = FontWeight.Bold)
+            genderList.forEach { item ->
