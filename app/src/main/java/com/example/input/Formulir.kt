@@ -130,3 +130,15 @@ fun FormulirPendaftaran(modifier: Modifier) {
 
             Spacer(Modifier.height(12.dp))
 
+            // Alamat
+            Text(text = "ALAMAT", fontWeight = FontWeight.Bold)
+            OutlinedTextField(
+                value = alamat,
+                onValueChange = { alamat = it },
+                label = { Text("Alamat") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true
+            )
+
+            Spacer(Modifier.height(16.dp))
+
