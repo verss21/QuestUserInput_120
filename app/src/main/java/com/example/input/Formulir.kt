@@ -169,4 +169,17 @@ fun FormulirPendaftaran(modifier: Modifier) {
                     modifier = Modifier
                         .heightIn(min = 100.dp)
                         .fillMaxWidth()
-                )
+                ) {
+                    Column(
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 15.dp)
+                    ) {
+                        Text(text = "Nama: $submittedNama", color = Color.White)
+                        Text(text = "Gender: $submittedJK", color = Color.White)
+                        Text(text = "Status: $submittedStatus", color = Color.White)
+                        Text(text = "Alamat: $submittedAlamat", color = Color.White)
+                    }
+                }
+            }
+        }
+    }
+}
