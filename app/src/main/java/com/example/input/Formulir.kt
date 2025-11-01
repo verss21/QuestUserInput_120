@@ -159,3 +159,14 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 Text(text = "Submit", color = Color.White, fontWeight = FontWeight.Bold)
             }
 
+            Spacer(Modifier.height(24.dp))
+
+            // Tampilkan hasil input
+            if (submittedNama.isNotEmpty()) {
+                ElevatedCard(
+                    elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+                    colors = CardDefaults.cardColors(containerColor = Color.Black),
+                    modifier = Modifier
+                        .heightIn(min = 100.dp)
+                        .fillMaxWidth()
+                )
