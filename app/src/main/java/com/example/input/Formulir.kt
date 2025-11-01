@@ -52,4 +52,16 @@ fun FormulirPendaftaran(modifier: Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .background(Color.White)
-    )
+    ) {
+        // Header gradien
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(
+                    Brush.verticalGradient(
+                        listOf(Color(0xFF9C27B0), Color(0xFFE1BEE7))
+                    )
+                )
+                .padding(vertical = 20.dp),
+            contentAlignment = Alignment.Center
+        )
