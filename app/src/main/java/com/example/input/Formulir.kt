@@ -95,3 +95,12 @@ fun FormulirPendaftaran(modifier: Modifier) {
             // Jenis Kelamin
             Text(text = "JENIS KELAMIN", fontWeight = FontWeight.Bold)
             genderList.forEach { item ->
+                Row(
+                    modifier = Modifier
+                        .selectable(
+                            selected = jenisKelamin == item,
+                            onClick = { jenisKelamin = item }
+                        )
+                        .padding(vertical = 4.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                )
