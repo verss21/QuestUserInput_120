@@ -48,4 +48,8 @@ fun FormulirPendaftaran(modifier: Modifier) {
     val genderList = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Janda", "Lajang", "Duda")
 
-
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)
+    )
