@@ -142,3 +142,20 @@ fun FormulirPendaftaran(modifier: Modifier) {
 
             Spacer(Modifier.height(16.dp))
 
+            // Tombol Submit
+            Button(
+                onClick = {
+                    submittedNama = nama
+                    submittedJK = jenisKelamin
+                    submittedStatus = status
+                    submittedAlamat = alamat
+                },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
+                enabled = nama.isNotEmpty() && alamat.isNotEmpty()
+            ) {
+                Text(text = "Submit", color = Color.White, fontWeight = FontWeight.Bold)
+            }
+
