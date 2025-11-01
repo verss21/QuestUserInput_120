@@ -111,3 +111,15 @@ fun FormulirPendaftaran(modifier: Modifier) {
 
             Spacer(Modifier.height(12.dp))
 
+            // Status Perkawinan
+            Text(text = "STATUS PERKAWINAN", fontWeight = FontWeight.Bold)
+            statusList.forEach { item ->
+                Row(
+                    modifier = Modifier
+                        .selectable(
+                            selected = status == item,
+                            onClick = { status = item }
+                        )
+                        .padding(vertical = 4.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                )
