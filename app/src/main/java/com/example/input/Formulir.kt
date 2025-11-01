@@ -78,4 +78,15 @@ fun FormulirPendaftaran(modifier: Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp)
-        )
+        ) {
+
+            // Nama Lengkap
+            Text(text = "NAMA LENGKAP", fontWeight = FontWeight.Bold)
+            OutlinedTextField(
+                value = nama,
+                onValueChange = { nama = it },
+                label = { Text("Isian nama lengkap") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true
+            )
+
