@@ -90,3 +90,5 @@ fun FormulirPendaftaran(modifier: Modifier) {
                 singleLine = true
             )
 
+            Spacer(Modifier.height(12.dp))
+
